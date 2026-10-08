@@ -32,3 +32,33 @@ form.addEventListener("submit", (event) => {
   console.log("Nombre: " + name);
   console.log("Apellido: " + lastName);
 });
+
+/* Tarea Extra */
+const container = document.getElementById("contenedor");
+console.log(container);
+
+const itemsSecond = document.querySelectorAll(".segundo");
+console.log(itemsSecond);
+
+const itemsThird = document.querySelector("ol li.tercero");
+console.log(itemsThird);
+
+const textInContainer = document.querySelector("#contenedor p");
+textInContainer.textContent = '¡Hola!'
+console.log(textInContainer);
+
+const footer = document.querySelector(".footer");
+footer.classList.add('principal')
+console.log(footer);
+
+footer.classList.remove('principal')
+console.log(footer);
+
+const listFourth = document.querySelector("ul");
+const newItem = document.createElement('li');
+newItem.textContent = 'cuatro';
+newItem.classList.add('cuatro');
+
+listFourth.appendChild(newItem);
+console.log(listFourth);
+
