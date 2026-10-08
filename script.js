@@ -20,3 +20,15 @@ const openAlert = () => {
   const messages = [messageAll, messageFirst, messageLast];
   alert(messages.join("\n"));
 };
+
+const form = document.getElementById("form1");
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const name = form.elements["fname"].value;
+  const lastName = form.elements["lname"].value;
+
+  console.log("Nombre: " + name);
+  console.log("Apellido: " + lastName);
+});
